@@ -1,6 +1,28 @@
+/* Creating an Arithmetic Calculator.
+DESCRIPTION
 
+Project objective:- As a developer, write a program to create an arithmetic calculator.
+ 
+Background of the problem statement:
 
-	import java.util.Scanner;	
+As a developer, write a Java code to create a calculator to perform the four basic arithmetic operations (addition, subtraction, multiplication, and division).
+
+You must use the following:
+
+Eclipse/IntelliJ: An IDE to code for the application
+Java: A programming language
+Git: To connect and push files from the local system to GitHub
+GitHub: To store the application code and track its versions
+Core Java concepts: Variables, data types, operators, type casting, control statements, class, objects, access specifiers, and core keywords like final, this, and static
+ 
+Following requirements should be met:
+
+The versions of the code should be tracked on GitHub repositories.
+The calculator should work properly.
+_______________________________________________________________________________________________________________________________________________________________________*/
+// Source Code starts Here
+
+	import java.util.Scanner;	//importing package to use classes and methods
 	import java.lang.Math;
 	
 	public class BasicCalculator1 {//class starts
@@ -15,18 +37,18 @@
 	      Scanner obj = new Scanner(System.in);
 	      for(int i=0;i<=6;i++) {
 	    	  
-	      // read operator which operation to be performed
-	      System.out.println("------------CALCULATOR------------");
+	      // showing menus which operation to be performed
+	      System.out.println("------------Created an Arithmetic Calculator-----------");
 	      System.out.println("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n5. percentage\n6. squareroot\n");
 	      
-	      System.out.print("\nEnter yourchoice : ");
+	      System.out.print("Enter your choice : ");
 	      operator = obj.next().charAt(0);
 	      
-	      	      //Ask user to enter two no.
-	      System.out.println("Enter first number");
+	      //Ask user to enter two no.
+	      System.out.println("Enter first number : ");
 	      num1 = obj.nextDouble();
 	      
-	      System.out.println("Enter second number");
+	      System.out.println("Enter second number : ");
 		  num2 = obj.nextDouble();
 		  
 		  
@@ -53,3 +75,96 @@
 	      obj.close();
 	   } //end of main
 	}//end of class
+/* --------------------------------OUTPUT---------------------------
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 1
+Enter first number : 
+20
+Enter second number : 
+30
+Result = 50.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 2
+Enter first number : 
+30
+Enter second number : 
+10
+Result = 20.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 3
+Enter first number : 
+20
+Enter second number : 
+4
+Result = 80.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 4
+Enter first number : 
+60
+Enter second number : 
+12
+Result = 5.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 5
+Enter first number : 
+100
+Enter second number : 
+2
+Result = 0.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+
+Enter your choice : 6
+Enter first number : 
+5
+Enter second number : 
+3
+Result = 125.0
+------------Created an Arithmetic Calculator-----------
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. percentage
+6. squareroot
+*/
